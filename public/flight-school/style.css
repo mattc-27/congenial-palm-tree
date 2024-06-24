@@ -114,7 +114,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: auto;
+    height: auto;
     width: 100%;
     max-width: 100%;
 }
@@ -124,8 +124,8 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    min-height: 100vh;
-    max-width: 99%;
+   height: auto;
+    max-width: 100%;
     width: 100%;
     font-family: 'Lato';
 }
