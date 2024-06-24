@@ -34,11 +34,16 @@ body {
     background-color: hsl(220, 100%, 99%);
 }
 
-#welcome {
-    background-image: url('https://images.unsplash.com/photo-1710332586149-5f09fc67e455?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-    background-size: cover;
-    background-position: center;
+#home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    width: 100%;
     margin: 1% 0%;
+    height: auto;
+    height: auto;
     /*     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -46,11 +51,13 @@ body {
     max-width: 100%;
     width: 100%;
     height: 60vh;
-    color: #262020;*/
-    background-color: #b9b09f4d;
+    color: #262020;
+        background-image: url('https://images.unsplash.com/photo-1710332586149-5f09fc67e455?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;*/
 }
 
-.welcome-container {
+.home-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,45 +65,42 @@ body {
     max-width: 100%;
     width: 100%;
     height: auto;
-    color: #262020;
-    flex-wrap: wrap;
+    max-width: 98%;
     margin: 0%;
-    background-color: #23232357;
-    backdrop-filter: blur(6px);
 }
 
-.welcome-content {
+.home-content {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     height: auto;
     width: 100%;
-    max-width: 100%;
+
     text-align: center;
-    color: #fff;
-    margin: 1% 0%;
+    margin: 1%;
+    max-width: 89%;
 }
 
-.welcome-content h1 {
+.home-content h1 {
     width: 100%;
-    text-align: center;
+    text-align: left;
     max-width: 99%;
-    font-size: 6vw;
+    font-size: 4em;
     font-weight: 500;
-    color: #fff;
+    color: #262020;
     font-family: "Cabin", serif;
     margin: 0.5% 0%;
 }
 
-.welcome-content p {
-    width: 100%;
-    max-width: 90%;
-    text-align: center;
-    line-height: 2;
-    font-size: 3.75vw;
-    font-weight: 300;
-    color: #fff;
+.home-content p {
+    width: auto;
+    max-width: 98%;
+    text-align: left;
+    line-height: 2.5;
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #262020;
     font-family: 'Figtree';
     margin: 0.5% 0%;
 }
@@ -104,6 +108,21 @@ body {
 .wrapper-button {
     margin: 0.5% 0%;
     width: 100%;
+}
+
+.welcome-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 99%;
+}
+
+.welcome-img img {
+    max-height: 80%;
+    max-width: 80%;
+    border-radius: 5px;
 }
 
 .wrapper-button button {
@@ -117,8 +136,7 @@ body {
     cursor: pointer;
     border-radius: 5px;
     background-color: #6777c6;
-    color: #fafafa;
-    border: 0.5px solid #fff;
+    color: #262020;
     margin: 0.5% 0%;
     padding: 1%;
 }
@@ -331,8 +349,10 @@ Info section
     font-family: "Mulish", sans-serif;
     background-image: url('https://images.unsplash.com/photo-1616173976697-efef88b2e860?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDMwfHx8ZW58MHx8fHx8');
     background-size: cover;
-    background-position: center;
-    margin: 1% 0%;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    background-position: 55% 30%;
 }
 
 .subscribe-content {
@@ -340,8 +360,8 @@ Info section
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #2c382222;
-    backdrop-filter: blur(8px);
+/*     background-color: #7d7d7d0c;*/
+    backdrop-filter: blur(3px);
     height: auto;
     width: 100%;
     max-width: 90%;
@@ -353,11 +373,10 @@ Info section
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: left;
     height: auto;
     width: 100%;
-    max-width: 99%;
-    flex-wrap: wrap;
+    max-width: 80%;
 }
 
 .subscribe-inner h1 {
@@ -367,12 +386,12 @@ Info section
 }
 
 .subscribe-inner p {
-    text-align: center;
+    text-align: left;
     line-height: 2;
     font-size: 2.8vw;
     width: 100%;
-    max-width: 99%;
-    margin: 1% 0%;
+    max-width: 98%;
+    margin: 1% 0.5%;
     font-weight: 400;
     color: #fff;
 }
@@ -646,6 +665,7 @@ products
     justify-content: flex-start;
     align-items: flex-start;
 }
+
 .banner-title h1 {
 
     width: 100%;
@@ -657,6 +677,7 @@ products
     margin: 1% 0.5%;
     font-family: "Cabin", serif;
 }
+
 .banner-text {
     display: flex;
     flex-direction: column;
@@ -956,54 +977,33 @@ footer {
 }
 
 
-@media only screen and (min-width: 980px) {
+@media only screen and (min-width: 800px) {
 
     .header-logo img {
         height: 20%;
         width: 20%;
     }
+
     .container {
         max-width: 100%;
         margin: 0 auto;
     }
 
-    .welcome-container {
-        min-height: 70vh;
-        height: auto;
-    }
-
-    .welcome-content {
-        justify-content: space-between;
+    .home-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
         align-items: center;
-        height: auto;
-    }
-
-    .welcome-content h1 {
+        max-width: 100%;
         width: 100%;
-        height: auto;
-        text-align: center;
+        height: 99%;
         max-width: 99%;
-        font-size: 4vw;
-        font-weight: 500;
-        color: #fff;
-        font-family: "Cabin", serif;
-        margin: 0.5% 0%;
+        margin: 0%;
     }
-
-    .welcome-content p {
-        height: auto;
-        width: 100%;
-        max-width: 79%;
-        text-align: center;
-        line-height: 3;
-        font-size: 2vw;
-        font-weight: 300;
-        color: #fff;
-        font-family: 'Figtree';
-        margin: 0.5% 0%;
-
-    }
-
+ 
+.home-content {
+    max-width: 99%;
+}
     .wrapper-button {
         margin: 1% 0%;
     }
@@ -1020,10 +1020,10 @@ footer {
         cursor: pointer;
         border-radius: 5px;
         background-color: #6777c6;
-        color: #fafafa;
-        border: 1px solid #fff;
+        color: #262020;
         margin: 0%;
     }
+
     /* */
     #subscribe-container {
         max-width: 98%;
