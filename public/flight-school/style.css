@@ -23,7 +23,7 @@
 }
 
 
-#welcome {
+#home {
     background-image: url('https://images.unsplash.com/photo-1683971336619-d445cbec0276?q=80&w=1489&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size: cover;
     background-position: center;
@@ -62,30 +62,37 @@
 /* */
 .info-banner {
     width: 100%;
-    height: 240px;
+    min-height: 270px;
+    height: auto;
     background-color: #233c5a;
     font-family: 'Lato';
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
 }
 
 .info-banner-content {
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    flex-direction: column-reverse;
+    justify-content: space-around;
     align-items: center;
-    height: 100%;
     width: 100%;
     max-width: 100%;
     margin: 0;
+   height: 100%;
 }
 
 .info-banner-text {
-    font-size: 1.5em;
+    font-size: 1.25em;
     color: #fff;
     line-height: 2;
-    width: auto;
-    flex-grow: 1;
-    max-width: 59%;
-    height: auto;
+    width: 100%;
+    max-width: 98%;
+    text-align: center;
+    height: 100%;
 }
 
 .info-banner-btn {
@@ -96,6 +103,7 @@
     color: #f6f6f6;
     border: none;
     cursor: pointer;
+    height: 100%;
 }
 
 .info-banner-btn button {
@@ -103,7 +111,7 @@
     color: #fff;
     font-size: 1.5em;
     border: none;
-    height: 3em;
+    height: 2em;
     width: 7em;
 }
 
@@ -112,11 +120,15 @@
 .welcome-banner {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    height: 100%;
+    width: 100%;
+
+    text-align: left;
+    max-width: 98%;
+    color: #302a27;
     height: auto;
     width: 100%;
-    max-width: 100%;
 }
 
 .welcome-container {
@@ -124,7 +136,7 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-   height: auto;
+    height: auto;
     max-width: 100%;
     width: 100%;
     font-family: 'Lato';
@@ -140,7 +152,7 @@
     height: 100%;
 }
 
-.welcome-banner-content-row {
+.welcome-content-row {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -150,7 +162,7 @@
     height: 100%;
 }
 
-.welcome-banner-text {
+.welcome-text {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -163,16 +175,23 @@
     font-size: 2em;
 }
 
-.welcome-banner-text h2 {
-    font-size: 2em;
-    width: 80%;
+.welcome-text h2 {
+    width: 100%;
+    text-align: left;
+    max-width: 90%;
+    font-size: 4em;
+    font-weight: 600;
+    margin: 1% 0.5%;
 }
 
-.welcome-banner-text p {
-    width: 70%;
-    text-wrap: wrap;
+.welcome-text p {
+    width: auto;
+    max-width: 90%;
+    text-align: left;
+    line-height: 2.5;
+    font-size: 1.5em;
     font-weight: 300;
-    font-size: 1.2em;
+    margin: 1% 0.5%;
     font-family: 'Lato';
 }
 
@@ -210,8 +229,10 @@
     align-items: center;
     max-width: 100%;
     width: 100%;
-    height: 60vh;
+    height: auto;
+    min-height: 60vh;
     font-family: 'Lato';
+    margin: 2% 0%;
 }
 
 .info-row {
@@ -347,7 +368,7 @@
 
 .info-bottom-row {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     height: auto;
     justify-content: center;
     align-items: center;
@@ -388,9 +409,10 @@
     width: auto;
     font-family: 'Lato';
     font-size: 1.5em;
+    position: unset;
+    max-width: 98%;
     line-height: 2;
-    position: relative;
-    right: 15%;
+    font-weight: 300;
 }
 
 .info-bottom-text p {
@@ -522,7 +544,8 @@
     align-items: center;
     width: 100%;
     max-width: 100%;
-    height: 500px;
+    min-height: 500px;
+    height: auto;
 }
 
 .banner-content {
@@ -580,7 +603,7 @@
 .fleet-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     width: 100%;
     max-width: 100%;
@@ -590,16 +613,18 @@
 
 .fleet-title {
     font-family: 'Lato';
+    width: 100%;
 }
 
 .fleet-title h2 {
     font-size: 5em;
-    font-weight: 300;
+    font-weight: 400;
+    max-width: 99%;
 }
 
 .fleet-content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     width: 100%;
     margin: 1% 0%;
@@ -609,7 +634,6 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
     font-family: 'Lato';
     cursor: pointer;
     border-left: 1px solid #252525;
@@ -620,8 +644,8 @@
 .card-text {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    list-style-position: inside;
     width: 100%;
     max-width: 99%;
 }
@@ -1085,4 +1109,62 @@ footer {
     width: 100%;
     color: #fff;
 
+}
+
+@media only screen and (min-width: 800px) {
+    .info-bottom-row {
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .info-bottom-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        font-family: 'Lato';
+        font-size: 1.5em;
+        line-height: 2;
+        position: relative;
+        right: 15%;
+    }
+    .info-banner-content {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .info-banner-text {
+        max-width: 59%;
+    }
+    .fleet-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100%;
+        margin: 1% 0%;
+    }
+
+    .fleet-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        font-family: 'Lato';
+        cursor: pointer;
+        border-left: 1px solid #252525;
+        color: #252525;
+        margin: 0 1%;
+    }
+
+    .card-text ul {
+        justify-content: center;
+        align-items: center;
+    }
 }
