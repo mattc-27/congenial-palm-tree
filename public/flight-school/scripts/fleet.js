@@ -31,7 +31,7 @@ $(document).ready(function() {
                     </div>
                     <div class='card-text'>
                         <ul>
-                            <li><b>Hourly rate:</b> ${item.hourlyRate}</li>
+                            <li><b>Hourly rate: </b>$${item.hourlyRate}</li>
                         </ul>
                     </div>
                     <div class='card-img'>

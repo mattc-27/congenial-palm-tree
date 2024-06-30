@@ -3,13 +3,13 @@ const customerReviews = [
         "id": 1,
         "date": "March 12, 2023",
         "user": "Emily S.",
-        "text": "My experience at ${schoolName} was nothing short of exceptional. The instructors were knowledgeable, patient, and dedicated to ensuring I received top-notch training. The facilities were modern and well-maintained, creating a professional learning environment. Thanks to their comprehensive programs, I achieved my dream of becoming a licensed pilot. Highly recommend this flight school to anyone pursuing a career in aviation!"
+        "text": "My experience at  Elevate Aviation was nothing short of exceptional. The instructors were knowledgeable, patient, and dedicated to ensuring I received top-notch training. The facilities were modern and well-maintained, creating a professional learning environment. Thanks to their comprehensive programs, I achieved my dream of becoming a licensed pilot. Highly recommend this flight school to anyone pursuing a career in aviation!"
     },
     {
         "id": 2,
         "date": "July 28, 2022",
         "user": "Jason M",
-        "text": "I can't say enough good things about ${schoolName}. From the moment I walked in, I felt welcomed and supported by the staff. The instructors went above and beyond to make sure I understood every aspect of flight training. Their focus on safety and attention to detail gave me conference in my abilities as a pilot. The hands-on experience and real-world simulations were invaluable. If you're serious about flying, this is the place to be!"
+        "text": "I can't say enough good things about Elevate Aviation. From the moment I walked in, I felt welcomed and supported by the staff. The instructors went above and beyond to make sure I understood every aspect of flight training. Their focus on safety and attention to detail gave me conference in my abilities as a pilot. The hands-on experience and real-world simulations were invaluable. If you're serious about flying, this is the place to be!"
     },
     {
         "id": 3,

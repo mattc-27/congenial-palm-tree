@@ -20,13 +20,11 @@
                 <img src="./assets/ElevateLogo1.png" />
             </div>
             <div class='header-nav'>
-
                 <a href='/'>Home</a>
-                <a href='/'>Instruction</a>
+                <a href='#instruction'>Instruction</a>
                 <a href='#fleet'>Fleet</a>
-                <a href='/'>About</a>
-                <a href='/'>Contact</a>
-
+                <a href='#about'>About</a>
+                <a href='#contact'>Contact</a>
             </div>
         </div>
     </header>
@@ -37,8 +35,8 @@
                     <div class='welcome-text'>
                         <h2>Welcome to Elevate Aviation Academy.</h2>
                         <p>Providing flight training to the Denver area since 1998, Elevated Aviation Academy is
-                            your premier destination for aviation education and training.</p>
-
+                            your premier destination for aviation education and training.
+                        </p>
                     </div>
                     <div class='welcome-content-row'>
                         <button class='button-solid'>
@@ -51,8 +49,7 @@
                 </div>
             </div>
         </section>
-
-        <section>
+        <section id="instruction">
             <div class='info-container-stacked'>
                 <div class='stacked-container-content'>
                     <div class='info-top-row'>
@@ -67,7 +64,8 @@
                                 <p> Our Advanced Training Program offers specialized courses for experienced pilots
                                     looking to enhance their skills. From instrument ratings to multi-engine
                                     certifications, we provide comprehensive training to help you reach your aviation
-                                    goals.</p>
+                                    goals.
+                                </p>
                             </div>
                         </div>
                         <div class='info-card-top'>
@@ -78,9 +76,12 @@
                                 <h2>Career Pathways</h2>
                             </div>
                             <div class='card-text'>
-                                <p>Explore our Career Pathways Program designed for aspiring commercial pilots. Gain the
+                                <p>
+                                    Explore our Career Pathways Program designed for aspiring commercial pilots. Gain
+                                    the
                                     knowledge and expertise required to pursue a career in aviation, including airline
-                                    transport pilot (ATP) certification and advanced flight operations.</p>
+                                    transport pilot (ATP) certification and advanced flight operations.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -91,7 +92,6 @@
                                     src='https://images.unsplash.com/photo-1503468120394-03d29a34a0bf?q=80&w=1228&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' />
                             </div>
                         </div>
-
                         <div class='content-bottom'>
                             <div class='info-bottom-text'>
                                 <p>
@@ -103,12 +103,10 @@
                                 </p>
                             </div>
                         </div>
-
                     </div>
                 </div>
             </div>
         </section>
-
         <div class='info-banner'>
             <div class='info-banner-content'>
                 <div class='info-banner-btn'>
@@ -123,43 +121,34 @@
                 </div>
             </div>
         </div>
-
         <section id="fleet">
             <div class='fleet-container'>
                 <div class='fleet-title'>
-                    <h2>Fleet</h2>
+                    <h1>Fleet</h1>
                 </div>
                 <div class='fleet-content' id='fleet-content'></div>
-                <!-- <div class='fleet-content'>
-
-
-
+                <!-- 
+                <div class='fleet-content'>
                     <div class='fleet-card'>
                         <div class='card-title'>
                             <h2>Cessna 172</h2>
-
                         </div>
                         <div class='card-text'>
                             <ul>
                                 <li><b>Hourly rate:</b> 200</li>
-
                             </ul>
-
                         </div>
                         <div class='card-img'>
                             <img
                                 src='https://images.unsplash.com/photo-1559117288-700a7acf7c0b?q=80&w=1742&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D' />
                         </div>
-
                         <div class='card-button'>
                             <button id='viewItemBtn'>View</button>
                         </div>
-
                     </div>
-
-                </div> -->
+                </div> 
+                -->
             </div>
-
         </section>
         <div class='info-banner'>
             <div class='info-banner-content'>
@@ -180,13 +169,11 @@
                 <div class='review-section-title'>
                     <h2>Reviews</h2>
                 </div>
-
                 <div class='review-content'>
                     <div class='review-content' id='review-content'></div>
-                    <!--  <div class='review-card ' key={item.id}>
+                    <!--  
+                    <div class='review-card ' key={item.id}>
                         <div class='reviews-card'>
-
-
                             <div class='reviews-text'>
                                 <p>My experience at Elevate Aviation was nothing short of exceptional. The instructors
                                     were knowledgeable, patient, and dedicated to ensuring I received top-notch
@@ -200,13 +187,13 @@
                                 <p>March 12, 2023</p>
 
                             </div>
-                        </div> -->
+                        </div> 
+                        -->
                 </div>
-
             </div>
             </div>
         </section>
-        <section id="infoSection">
+        <section class="info-section" id="about">
             <div class='info-row'>
                 <div class='info-row-img'>
                     <img
@@ -225,36 +212,42 @@
             </div>
         </section>
     </main>
-
-
     <footer class='page-footer'>
-        <div class='footer-content'>
+        <div class='footer-content' id="contact">
             <div class='footer-main'>
-
                 <div class='footer-left'>
                     <div class='footer-title'>
                         <h3>Elevate Aviation Academy</h3>
                     </div>
                     <div class='footer-icons'>
-                        <img id="socialIcon" src="./assets/insta-icon.png" />
-                        <img id="socialIcon" src="./assets/facebook-icon.png" />
+                        <a target="_blank" href="https://icons8.com/icon/32320/instagram" target="_blank"
+                            href="https://icons8.com">
+                            <img id="socialIcon" alt="instagram" src="./assets/instagram_white.png" />
+                        </a>
+                        <a target="_blank" href="https://icons8.com/icon/59780/facebook" target="_blank"
+                            href="https://icons8.com">
+                            <img id="socialIcon" src="./assets/facebook_white.png" />
+                        </a>
                     </div>
                 </div>
                 <div class='footer-center'>
-                    <h3>Flight instruction</h3>
+                    <div clas="footer-title">
+                        <h3>Flight instruction</h3>
+                    </div>
                     <ul>
                         <li>Fleet</li>
                     </ul>
                 </div>
                 <div class='footer-right'>
-                    <h3>Contact</h3>
+                    <div clas="footer-title">
+                        <h3>Contact</h3>
+                    </div>
                     <ul>
                         <li>(555) 555-5555</li>
                         <li>email@example.com</li>
                     </ul>
                 </div>
             </div>
-
         </div>
     </footer>
 
