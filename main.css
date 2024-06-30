@@ -1,0 +1,342 @@
+/* ---- ----*/
+
+.info-container-modern {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid #fff;
+    min-height: 100vh;
+    font-family: 'Lato';
+}
+
+.info-content-reverse-modern {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: first baseline;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+.info-content-modern {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: first baseline;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+}
+
+.info-img-modern {
+    width: 100%;
+    position: relative;
+    max-width: 100%;
+    bottom: 30%;
+}
+
+.info-img-modern img {
+    max-width: 25%;
+    position: absolute;
+    right: 10%;
+}
+
+.info-img-v {
+    width: 100%;
+    position: relative;
+    max-width: 100%;
+    bottom: 30%;
+}
+
+.info-img-v img {
+    max-width: 25%;
+    position: absolute;
+    right: 20%;
+}
+
+.info-text-modern {
+    width: 100%;
+    max-width: 60%;
+    font-family: 'Cabin';
+    margin: 0% 1%;
+    line-height: 2;
+    position: absolute;
+    color: #303030;
+}
+
+.info-text-modern h2 {
+    font-size: 3em;
+}
+
+.info-text-modern h3 {
+    font-size: 2em;
+    color: #303030;
+}
+
+.info-text-modern p {
+    font-weight: 300;
+    margin: 0.5%;
+    line-height: 2;
+    color: #303030;
+    font-size: 1.5em;
+    width: 90%;
+    margin-left: 1%;
+    padding-left: 1%;
+    border-left: 1px solid #101820;
+}
+
+.info-text-modern ul {
+    max-width: 99%;
+    font-size: 1.5em;
+    list-style-position: inside;
+    line-height: 2;
+}
+
+.banner-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 100%;
+    min-height: 500px;
+    height: auto;
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    background-color: #6e7dca;
+}
+
+.banner-inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80%;
+}
+
+.banner-title {
+    display: flex;
+    flex-direction: row;
+}
+
+.banner-title h1 {
+    font-size: 3em;
+    color: #303030;
+}
+
+.banner-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 80%;
+}
+
+.banner-text p {
+    font-size: 2em;
+    color: #fff;
+    width: 100%;
+    max-width: 70%;
+    text-align: center;
+    line-height: 2;
+    font-family: 'Lato';
+}
+
+.section-container-modern {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid #252525;
+    height: auto;
+    margin: 5% 0;
+    font-family: 'Lato';
+}
+
+.section-content-moden {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%;
+    height: 100vh;
+    width: 100%;
+}
+
+.section-img-v {
+    max-width: 80%;
+    height: auto;
+}
+
+/* ---- ----*/
+.parallax-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.parallax-cloud {
+    width: 150%;
+    height: 120%;
+    z-index: 9999999;
+}
+
+.parallax-scale {
+    height: auto;
+    max-width: 80%;
+    z-index: 7000;
+}
+
+.parallax-scale img {
+    width: 500px;
+    height: 200px;
+}
+
+
+/* ======== 
+contact 
+ =========== */
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+    max-height: fit-content;
+}
+
+
+.contact-container-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    margin: 1% 0;
+}
+
+.contact-container-top h1 {
+    font-family: "Cormorant Garamond", serif;
+    width: 100%;
+    font-size: 4em;
+}
+
+.contact-content {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #252525;
+    width: 100%;
+    font-size: 2em;
+    font-weight: 300;
+    margin: 0.5% 0.5% 1% 0.5%;
+    font-family: "Mulish", sans-serif;
+    border-bottom: 1px solid #252525;
+    margin: 1% 0;
+    height: auto;
+    /* font-family: "Proza Libre", sans-serif;
+    */
+}
+
+
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: auto;
+    margin: 0;
+    height: auto;
+    width: 100%;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    line-height: 2;
+}
+
+.contact-content p {
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-self: center;
+    height: auto;
+    width: 100%;
+    max-width: 90%;
+    font-size: 1.5em;
+    margin: 5% 0;
+}
+
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    margin: 1% 0.5%;
+}
+
+.input-label {
+    align-self: center;
+    max-width: 80%;
+    height: auto;
+    width: 100%;
+    font-size: 1em;
+    margin: 0.5% 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.input-group input,
+.input-group textarea {
+    max-width: 80%;
+    height: 2em;
+    width: 100%;
+    height: 40px;
+    margin: 0.5% 0;
+    align-self: center;
+    font-size: 14px;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+}
+
+
+.submit-button {
+    height: auto;
+    width: 100%;
+    max-width: 45%;
+    padding: 0.5%;
+    align-self: center;
+    height: 40px;
+    background-color: #fff;
+    color: #252525;
+    border: 0.5px solid #5b5b5b;
+    font-size: 18px;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+
+}
