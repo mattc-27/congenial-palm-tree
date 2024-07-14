@@ -30,9 +30,8 @@ $(document).ready(function() {
                         <h2>${item.name}</h2>
                     </div>
                     <div class='card-text'>
-                        <ul>
-                            <li><b>Hourly rate: </b>$${item.hourlyRate}</li>
-                        </ul>
+                        <p><b>Hourly rate: </b>$${item.hourlyRate}</p>
+               
                     </div>
                     <div class='card-img'>
                         <img src='${item.image}' alt='${item.name}' />
