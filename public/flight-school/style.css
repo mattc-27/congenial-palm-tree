@@ -26,12 +26,11 @@
 /* ---- ----*/
 #home {
     background-image: url('https://images.unsplash.com/photo-1683971336619-d445cbec0276?q=80&w=1489&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-    background-size: cover;
     background-position: center;
-    width: 100%;
-    max-width: 100%;
-    margin: 0%;
+    background-size: cover;
+    height: 99vh;
 }
+
 .welcome-banner {
     display: flex;
     flex-direction: column;
@@ -55,6 +54,15 @@
     font-family: 'Lato';
 }
 
+.welcome-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+}
+
 .welcome-banner-content {
     display: flex;
     flex-direction: column;
@@ -65,36 +73,37 @@
     height: 100%;
 }
 
-.welcome-content-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: flex-start;
-    width: 100%;
-    max-width: 70%;
-    height: 100%;
-}
+
 
 .welcome-text {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    max-height: 49%;
     width: 100%;
-    max-width: 92%;
-    font-family: 'Lato';
-    margin: 0% 1%;
-    line-height: 2;
-    color: #fff;
-    font-size: 2em;
+    max-width: 99%;
+    background-color: #2525255a;
+}
+
+.welcome-content-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    max-height: 49%;
+    width: 100%;
+    max-width: 99%;
 }
 
 .welcome-text h2 {
-    width: 100%;
-    text-align: left;
-    max-width: 90%;
-    font-size: 4em;
-    font-weight: 600;
-    margin: 1% 0.5%;
+    font-size: 3em;
+    max-width: 79%;
+    text-wrap: wrap;
+    color: #fff;
+    font-family: 'Cabin';
 }
 
 .welcome-text p {
@@ -105,6 +114,7 @@
     font-size: 1.5em;
     font-weight: 300;
     margin: 1% 0.5%;
+    color: #fff;
     font-family: 'Lato';
 }
 
@@ -114,9 +124,10 @@
     background: #2c72b7;
     color: #fff;
     border: none;
-    font-size: 1.25em;
+    font-size: 1em;
     font-weight: 300;
     flex-grow: 1;
+    border: 0.5px solid #fff;
     margin: 0.5%;
     cursor: pointer;
 }
@@ -126,8 +137,8 @@
     width: auto;
     background: transparent;
     color: #fff;
-    border: 1px solid #fff;
-    font-size: 1.25em;
+    border: 0.5px solid #fff;
+    font-size: 1em;
     font-weight: 300;
     flex-grow: 1;
     margin: 0.5%;
@@ -158,7 +169,7 @@
 
 .info-top-row {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     max-width: 100%;
     justify-content: space-evenly;
@@ -175,19 +186,23 @@
     align-items: flex-start;
     height: auto;
     width: 100%;
-    max-width: 35%;
+    max-width: 98%;
     margin: 5% 0%;
 }
+
 .card-icon {
     width: auto;
     height: auto;
 }
+
 .card-title {
     font-size: 1.5em;
     width: 100%;
+    max-width: 98%;
     height: auto;
     margin: 0.5% 1%;
 }
+
 .card-text {
     font-size: 1em;
     line-height: 2;
@@ -205,6 +220,7 @@
     width: 100%;
     max-width: 100%;
 }
+
 .content-bottom {
     display: flex;
     flex-direction: column;
@@ -224,6 +240,7 @@
     height: auto;
     width: auto;
 }
+
 .info-bottom-img img {
     max-width: 40%;
 }
@@ -241,6 +258,7 @@
     line-height: 2;
     font-weight: 300;
 }
+
 .info-bottom-text p {
     margin: 5% 0%;
 }
@@ -261,14 +279,19 @@
 }
 
 .fleet-title {
+    max-width: 100%;
+    align-self: flex-start;
+    text-wrap: wrap;
+    color: #1d1c28;
     font-family: 'Lato';
-    width: 100%;
 }
 
 .fleet-title h1 {
-    font-size: 7vw;
-    font-weight: 500;
-    max-width: 99%;
+    font-size: 4em;
+    max-width: 100%;
+    align-self: flex-start;
+    text-wrap: wrap;
+    font-weight: 400;
 }
 
 .fleet-content {
@@ -285,7 +308,6 @@
     justify-content: flex-start;
     font-family: 'Lato';
     cursor: pointer;
-    border-left: 1px solid #252525;
     color: #252525;
     margin: 0 1%;
 }
@@ -293,10 +315,21 @@
 .card-text {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    list-style-position: inside;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    max-width: 99%;
+    flex-grow: 1;
+    max-height: 60%;
+    margin: 0.5%;
+    max-width: 98%;
+}
+
+.card-text p {
+    font-size: 1.25em;
+    line-height: 2;
+    font-weight: 300;
+    max-width: 100%;
+    width: 100%;
 }
 
 .card-img {
@@ -304,36 +337,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: auto;
+    width: 100%;
+    flex-grow: 1;
 }
 
 .card-img img {
-    max-width: 50%;
-}
-
-.card-title {
-    margin: 1%;
-    font-size: 2em;
-    font-weight: 400;
+    max-height: 100%;
     width: 100%;
-    max-width: 99%;
-}
-
-.card-text ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    list-style-position: inside;
-    list-style: circle;
-    max-width: 80%;
-    line-height: 2;
-}
-
-.card-text ul li {
-    font-size: 1.5em;
-    font-weight: 300;
-    margin: 0% 2%;
+    max-width: 100%;
+    margin: 0.25%;
+    border-radius: 1px;
 }
 
 
@@ -342,9 +355,28 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    align-self: center;
+    max-width: 100%;
     width: 100%;
+    height: auto;
+    margin-top: 0.5%;
 }
+
+.card-button button {
+    align-self: center;
+    height: auto;
+    width: 80%;
+    background-color: #fff;
+    color: #6c6c6c;
+    font-size: 1.5em;
+    border: 0.5px solid #7c7c7c;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.card-button button:hover {
+    border: 0.5px solid #415793;
+}
+
 
 
 .view-item {
@@ -592,7 +624,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    height: 100%;
+    height: auto;
     font-family: 'Cabin', sans-serif;
 }
 
@@ -614,11 +646,11 @@ header {
 
 .header-nav {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     color: #f4f1f1;
-    width: 50%;
+    width: auto;
     margin: 1%;
 }
 
@@ -635,7 +667,7 @@ header {
 
 /* -- -- -- --
 \ footer
--- -- -- -- */ 
+-- -- -- -- */
 footer {
     min-height: 180px;
     max-width: 100%;
@@ -651,8 +683,7 @@ footer {
     align-items: center;
     height: 100%;
     width: 100%;
-    max-width: 99%;
-    max-height: 100%;
+    max-width: 100%;
     margin: 0;
 }
 
@@ -667,6 +698,7 @@ footer {
     font-family: 'Lato';
     color: #fff;
 }
+
 .footer-title {
     display: flex;
     flex-direction: row;
@@ -677,7 +709,7 @@ footer {
     max-height: 99%;
     width: 100%;
     max-width: 100%;
-    font-size: 1.5em;
+    font-size: 1em;
 }
 
 .footer-icons {
@@ -694,6 +726,7 @@ footer {
     height: 50px;
     width: 50px;
 }
+
 .footer-left,
 .footer-right,
 .footer-center {
@@ -703,7 +736,7 @@ footer {
     align-items: flex-start;
     text-align: left;
     max-height: 99%;
-    font-size: 1.5em;
+    font-size: 1em;
     line-height: 1.5;
     width: 100%;
     max-width: 99%;
@@ -736,7 +769,23 @@ footer {
 }
 
 @media only screen and (min-width: 800px) {
+    header {
+        height: 150px;
+    }
 
+    .header-nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        color: #f4f1f1;
+        width: auto;
+        margin: 1%;
+    }
+
+    .welcome-content-row button {
+        max-width: 35%;
+    }
 
     .info-bottom-row {
         display: flex;
@@ -761,27 +810,39 @@ footer {
         right: 15%;
     }
 
-    /* banner */ 
+    /* banner */
     .info-banner-content {
         flex-direction: row;
         justify-content: center;
         align-items: center;
         height: 100%;
     }
+
     .info-banner-text {
         max-width: 59%;
     }
 
     /* fleet */
     .fleet-title {
-        font-family: 'Lato';
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
         width: 100%;
+        max-width: 98%;
+
     }
+
     .fleet-title h1 {
-        font-size: 7vw;
-        font-weight: 500;
-        max-width: 99%;
+        font-size: 5em;
+        width: auto;
+        width: auto;
+        font-weight: 400;
+        text-align: left;
+        font-family: 'Lato';
+        align-self: flex-start;
     }
+
     .fleet-content {
         display: flex;
         flex-direction: row;
@@ -791,6 +852,7 @@ footer {
         height: 100%;
         margin: 1% 0%;
     }
+
     .fleet-card {
         display: flex;
         flex-direction: column;
@@ -798,38 +860,93 @@ footer {
         align-items: center;
         font-family: 'Lato';
         cursor: pointer;
-        border: 0.5px solid #252525;
         color: #252525;
     }
-    .card-text ul {
-        justify-content: center;
+
+    .card-title {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
         align-items: center;
-        list-style-position: inside;
+        align-self: flex-start;
+        font-family: 'Lato';
         width: 100%;
+        max-width: 90%;
+        margin-left: 2%;
     }
-    .card-text ul li {
-        text-align: left;
+
+    .card-title h2 {
+        font-size: 2.5em;
         width: 100%;
         max-width: 99%;
-        font-size: 2em;
+        width: auto;
+        font-weight: 400;
+        text-align: left;
+        align-self: flex-start;
     }
+
+    .card-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: 100%;
+        flex-grow: 1;
+        max-height: 60%;
+        margin: 0.5% 1.5%;
+        max-width: 80%;
+    }
+
+    .card-text p {
+        font-size: 2.5em;
+        line-height: 2;
+        font-weight: 300;
+        text-decoration: underline;
+    }
+
     .card-img {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: auto;
-        height: auto;
+        width: 100%;
+        flex-grow: 1;
     }
+
     .card-img img {
-        max-width: 99%;
-        max-height: 99%;
-        border-radius: 5px;
+        max-height: 50%;
+        width: 100%;
+        max-width: 90%;
+        margin: 0.25%;
+        border-radius: 1px;
     }
+
     .card-button {
-        margin: 1%;
+        height: auto;
+        width: auto;
+        max-width: 50%;
+        font-size: 1em;
+        color: #f6f6f6;
         border: none;
+        height: 100%;
+        margin-top: 2%;
     }
+
+    .card-button button {
+        background-color: #fff;
+        color: #6c6c6c;
+        font-size: 1.5em;
+        border: 0.5px solid #7c7c7c;
+        height: 2em;
+        border-radius: 30px;
+        width: 25vw;
+        cursor: pointer;
+    }
+
+    .card-button button:hover {
+        border: 0.5px solid #415793;
+    }
+
     .viewItemBtn {
         height: 2.5em;
         width: 100%;
@@ -845,10 +962,11 @@ footer {
     }
 
 
-/* reviews */ 
+    /* reviews */
     .reviews-card {
         box-shadow: 0px 0px 5px 0px rgba(118, 118, 118, 0.23);
     }
+
     .review-content {
         display: flex;
         flex-direction: row;
@@ -858,6 +976,7 @@ footer {
         width: 100%;
         font-weight: 300;
     }
+
     .reviews-user {
         display: flex;
         flex-direction: row;
@@ -869,6 +988,7 @@ footer {
         font-size: 1em;
         font-weight: 500;
     }
+
     .info-row {
         display: flex;
         flex-direction: row;
@@ -889,6 +1009,7 @@ footer {
         max-width: 90%;
         width: 100%
     }
+
     .info-text-main {
         display: flex;
         flex-direction: column;
@@ -913,6 +1034,7 @@ footer {
         max-width: 40%;
         margin: 0;
     }
+
     .info-row-img img {
         max-width: 50%;
         border-radius: 5px;
