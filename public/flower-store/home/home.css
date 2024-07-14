@@ -37,96 +37,51 @@ body {
 }
 
 #home {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    max-width: 100%;
-    width: 100%;
-    margin: 1% 0%;
-    height: auto;
-    width: auto;
-    height: 100%;
+    height: fit-content;
     margin: 2.5% 0.5%;
-    max-width: 100%;
-    height: 100vh;
+    max-width: 98%;
+    background-color: #aad688;
 }
-/* 
-.home-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 100%;
-    width: 100%;
-    height: 100%;
-    margin: 0%;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: auto;
-    height: 100%;
-    margin: 2.5% 0.5%;
-    max-width: 90%;
-}*/
 
 .home-content {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    height: 100%;
+    height: auto;
     width: 100%;
-    background-color: #aad688;
-    text-align: left;
     max-width: 98%;
+    height: auto;
+    flex-grow: 1;
+    text-align: left;
     color: #302a27;
-height: auto;
-    width: 100%;
-
 }
 
 .home-content h1 {
     width: 100%;
     text-align: left;
-    max-width: 90%;
-    font-size: 4em;
+    max-width: 99%;
+    font-size: 3.5em;
     font-weight: 600;
     font-family: "Corben", serif;
-    font-family: "Nixie One", system-ui;
-    margin: 1% 0.5%;
+    font-family: "Figtree", system-ui;
 }
 
 .home-content p {
     width: auto;
-    max-width: 90%;
+    max-width: 98%;
+    margin: 1% 0.5%;
     text-align: left;
     line-height: 2.5;
     font-size: 1.5em;
-    font-weight: 300;
-    font-family: "Ledger", serif;
-    margin: 1% 0.5%;
+    font-weight: 400;
+    font-family: "Figtree", serif;
 }
 
 .wrapper-button {
     margin: 0.5% 0%;
     width: 100%;
-}
-
-.welcome-img {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 99%;
-}
-
-.welcome-img img {
-    max-height: 90%;
-    max-width: 90%;
-    border-radius: 5px;
+    max-width: 98%;
 }
 
 .wrapper-button button {
@@ -135,12 +90,12 @@ height: auto;
     font-size: 1em;
     max-width: 50%;
     font-weight: 200;
-    font-family: "Ledger", serif;
+    font-family: "Figtree", serif;
     border: none;
     cursor: pointer;
     border-radius: 5px;
     background-color: #6777c6;
-    color: #262020;
+    color: #fff;
     margin: 0.5% 0%;
     padding: 1%;
 }
@@ -261,12 +216,13 @@ Info section
 .info-content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    width: auto;
-    height: 100%;
-    margin: 2.5% 0.5%;
-    max-width: 90%;
+    height: auto;
+    width: 100%;
+    max-width: 98%;
+    height: auto;
+    flex-grow: 1;
 }
 
 .info-text-container {
@@ -279,24 +235,40 @@ Info section
 }
 
 .info-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
     width: 100%;
-    text-align: left;
+    max-width: 99%;
 }
 
 .info-title h1 {
-    font-size: 4em;
-    margin: 1% 0.5%;
     width: 100%;
-    max-width: 100%;
+    max-width: 98%;
     text-align: left;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 2;
+    font-size: 3.5em;
+    margin: 0.5%;
     color: #262020;
-    font-family: "Nixie One", system-ui;
+    font-family: "Figtree", system-ui;
+
+    max-width: 79%;
+    text-wrap: wrap;
+
+    font-family: 'Cabin';
 }
 
 .info-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
     height: auto;
+    width: auto;
     /*     position: relative;
     z-index: 8999;*/
 }
@@ -308,7 +280,7 @@ Info section
     text-align: left;
     color: #262020;
     font-family: "Ledger", serif;
-    font-size: 1.8em;
+    font-size: 1em;
     font-weight: 300;
     line-height: 3;
     height: auto;
@@ -353,8 +325,7 @@ Info section
     align-items: center;
     max-width: 100%;
     width: 100%;
-    height: 59vh;
-    font-family: "Nixie One", system-ui;
+
 
     /*     background-image: url('https://images.unsplash.com/photo-1616173976697-efef88b2e860?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwcm9maWxlLWxpa2VkfDMwfHx8ZW58MHx8fHx8');
     background-size: cover;
@@ -371,11 +342,12 @@ Info section
     /*     background-color: #7d7d7d0c;*/
     backdrop-filter: blur(3px);
     height: auto;
+    min-height: 25vh;
     width: 100%;
-    max-width: 90%;
+    max-width: 98%;
     flex-wrap: wrap;
-    margin: 1% 0.5%;
-    height: 45%;
+    margin: 2.5% 0.5%;
+    height: auto;
     background-color: #ffca7b;
 
 }
@@ -387,14 +359,18 @@ Info section
     align-items: left;
     height: auto;
     width: 100%;
-    max-width: 80%;
+    max-width: 98%;
+    margin: 1% 0%;
 }
 
 .subscribe-inner h1 {
-    font-size: 4vw;
+    font-size: 2.5em;
+    font-weight: 400;
     margin: 1% 0%;
+    flex-grow: 1;
     color: #fff;
     color: #302a27;
+    font-family: "Figtree", serif;
 }
 
 .subscribe-inner p {
@@ -407,6 +383,7 @@ Info section
     font-weight: 400;
     color: #fff;
     color: #302a27;
+    font-family: "Figtree", serif;
 }
 
 .subscribe-input {
@@ -423,46 +400,36 @@ Info section
 }
 
 .subscribe-input input {
-    width: 100%;
     height: 2.5em;
-    max-height: 2.8em;
-    max-width: 99%;
-    border: none;
-    border-radius: 5px;
-    color: #302a27;
+    width: 100%;
+    flex-grow: 1;
     margin: 0.5%;
     padding: 0.5%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #302a27;
     background-color: none;
     font-size: 1em;
     font-weight: 400;
-    font-family: "Ledger", serif;
-    cursor: pointer;
+    font-family: "Figtree", serif;
+
 }
 
 .subscribeBtn {
-    width: 100%;
-    font-size: 1.5em;
     height: 2.25em;
-    max-height: 2.8em;
-    max-width: 39%;
-    font-weight: 600;
-    font-family: "Nixie One", system-ui;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
+    width: 100%;
+    max-width: 35%;
     margin: 0.5%;
-    background-color: #aad688;
-    color: #302a27;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.25em;
+    font-weight: 400;
+    background-color: #99c578;
+    color: #fff;
+    font-family: "Figtree", system-ui;
 }
-
-/* ----
-
-
-/* -- -- -- 
-
-SubscribeInput
---- --- --- --- --- */
-
 
 /* ------------- 
 // Landing page, 
@@ -973,37 +940,42 @@ footer {
         max-width: 100%;
         margin: 0 auto;
     }
+
     #home {
         flex-direction: row-reverse;
         align-items: center;
         height: auto;
     }
+
+    .home-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+    }
+
     .home-content {
-        width: 100%;
-        max-width: 99%;
-        height: auto;
+
+        max-width: 70%;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        margin: 2% 0.5%;
+
     }
 
     .home-content h1 {
-        width: 100%;
-        text-align: left;
         max-width: 99%;
         font-size: 3.5em;
-        font-weight: 700;
-        font-family: "Nixie One", system-ui;
-        margin: 1%;
+        font-weight: 500;
     }
 
     .home-content p {
-        width: auto;
         max-width: 99%;
-        text-align: left;
         line-height: 3;
         font-size: 1.5em;
         font-weight: 300;
-        font-family: "Ledger", serif;
-        margin: 1%;
-
     }
 
     .welcome-img {
@@ -1034,18 +1006,21 @@ footer {
         max-height: 2.8em;
         max-width: 25%;
         font-weight: 400;
-        font-family: "Ledger", serif;
+        font-family: "Figtree", serif;
         border: none;
         cursor: pointer;
         border-radius: 5px;
-        background-color: #6777c6;
-        color: #262020;
         margin: 0%;
     }
 
     /* */
     #subscribe-container {
-        max-width: 98%;
+        max-width: 80%;
+
+    }
+
+    .subscribe-content {
+        min-height: 30vh;
     }
 
     /* */
