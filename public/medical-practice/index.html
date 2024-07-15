@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/main.css" />
+    <style>
+        #mobileNav {
+            display: none;
+        }
+
+        #mobileHeader {
+            display: none;
+        }
+
+        #standardHeader {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- standard header -->
+    <header id="standardHeader">
+        <div class='header-content'>
+            <div class='header-title'>
+                <a href="/">
+                    <h1>Willow Creek Family Medicine</h1>
+                </a>
+            </div>
+            <div class='header-nav'>
+                <a href='/about/index.html'>About</a>
+                <a href='#services'>Services</a>
+                <a href='/schedule/index.html'>Appointments</a>
+                <a href='#contact'>Contact</a>
+            </div>
+        </div>
+
+    </header>
+    <!-- mobile header -->
+    <header id="mobileHeader" style="display: none;">
+        <div class='header-content'>
+            <div class='header-title'>
+                <a href="/">
+                    <h1>Willow Creek Family Medicine</h1>
+                </a>
+            </div>
+            <div class="mobile-nav">
+                <button id="navButton">
+                    <img src="/assets/icons8-menu-50.png">
+                </button>
+                <div id='mobileNav'>
+                    <ul>
+                        <li> <a href='/about/index.html'>About</a></li>
+                        <li> <a href='#services'>Services</a></li>
+                        <li> <a href='/'>Appointments</a></li>
+                        <li> <a href='#contact'>Contact</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="container">
+
+        <section class="home-container" id="home">
+
+            <div class="welcome-content">
+                <div class="welcome-title">
+                    <h1>Welcome to Willow Creek Family Medicine</h1>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="about">
+            <div class="about-content">
+                <div class="about-title">
+                    <h2>Our Mission</h2>
+                </div>
+                <div class="about-text">
+                    <p>At Willow Creek Family Medicine, our mission is to provide exceptional, patient-centered
+                        healthcare that promotes the well-being of our community.
+                        We strive to create a welcoming and supportive environment where every patient feels valued and
+                        heard.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="services">
+            <div class="services-content-row">
+                <div class="services-item">
+                    <div class="services-title">
+                        <h2>Meet Our Team</h2>
+                    </div>
+                    <div class="services-text">
+                        <p>
+                            Our dedicated team of healthcare professionals brings a wealth of experience and a
+                            compassionate approach to family medicine. Learn more about our practitioners and their
+                            commitment to your health.
+                        </p>
+                    </div>
+                </div>
+                <div class="services-item">
+                    <div class="services-title">
+                        <h2>Services</h2>
+                    </div>
+
+                    <div class="services-text">
+                        <p>
+                            We offer a wide range of medical services to meet the diverse needs of our patients. Explore
+                            our services to see how we can help you achieve and maintain optimal health.
+                        </p>
+                    </div>
+                </div>
+                <div class="services-item">
+
+                    <div class="services-title">
+                        <h2>Patient Resources</h2>
+                    </div>
+                    <div class="services-text">
+                        <p>
+                            Access important forms, educational materials, and helpful links to support your healthcare
+                            journey. We are here to provide the resources you need for informed decision-making.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+
+            <div class="contact-content">
+                <div class="contact-title">
+                    <h2>Contact Us</h2>
+                </div>
+                <div class="contact-text">
+                    <p>
+                        Have questions or need to schedule an appointment?
+                        Get in touch with us today. We look forward to assisting you and your family with your
+                        healthcare needs.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+<script>
+
+    const menu = document.getElementById('mobileNav');
+    const showNavButton = document.getElementById('navButton');
+    const mobileHeader = document.getElementById('mobileHeader');
+    const standardHeader = document.getElementById('standardHeader');
+
+    showNavButton.addEventListener("click", toggleMenu);
+
+    function toggleMenu() {
+        if (menu.style.display === 'none' || menu.style.display === '') {
+            menu.style.display = 'block';
+        } else {
+            menu.style.display = 'none';
+        }
+    }
+
+    function updateHeader() {
+        if (window.innerWidth < 740) {
+            mobileHeader.style.display = 'block';
+            standardHeader.style.display = 'none';
+        } else {
+            mobileHeader.style.display = 'none';
+            standardHeader.style.display = 'block';
+        }
+    }
+
+    window.addEventListener("resize", updateHeader);
+
+    updateHeader();
+
+</script>
+
+</html>
