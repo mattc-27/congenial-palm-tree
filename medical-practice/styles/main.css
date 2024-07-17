@@ -57,7 +57,6 @@
     height: auto;
     min-height: 80vh;
     margin: 2% 0%;
-    border: 1px solid red;
     height: auto;
 }
 
@@ -70,7 +69,6 @@
     flex-grow: 1;
     width: 100%;
     max-width: 98%;
-    border: 1px solid red;
     margin: 0%;
 }
 
@@ -80,12 +78,10 @@
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    border: 1px solid red;
 }
 
 .about-title h2 {
     font-size: 4em;
-    border: 1px solid red;
     color: #1d1c28;
     margin: 2%;
     width: 100%;
@@ -101,7 +97,6 @@
     align-items: center;
     width: 100%;
     max-width: 98%;
-    border: 1px solid red;
 }
 
 .about-text p {
@@ -113,7 +108,6 @@
     width: 100%;
     max-width: 98%;
     text-align: left;
-    border: 1px solid red;
 }
 
 #services {
@@ -124,7 +118,6 @@
     height: auto;
     min-height: 120vh;
     margin: 2% 0%;
-    border: 1px solid blue;
     height: auto;
 }
 
@@ -136,7 +129,6 @@
     flex-grow: 1;
     width: 100%;
     max-width: 98%;
-    border: 1px solid red;
 }
 
 .services-item {
@@ -148,7 +140,6 @@
     width: 100%;
     max-width: 30%;
     height: auto;
-    border: 1px solid green;
 }
 
 .services-title {
@@ -224,12 +215,10 @@
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    border: 1px solid red;
 }
 
 .contact-title h2 {
     font-size: 4em;
-    border: 1px solid red;
     color: #1d1c28;
     margin: 2%;
     width: 100%;
