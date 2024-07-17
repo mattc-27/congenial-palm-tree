@@ -54,8 +54,11 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 59vh;
-    width: 100%;
+    height: auto;
+    min-height: 80vh;
+    margin: 2% 0%;
+    border: 1px solid red;
+    height: auto;
 }
 
 .about-content {
@@ -63,9 +66,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: auto;
+    flex-grow: 1;
     width: 100%;
     max-width: 98%;
-    margin: 5% 0;
+    border: 1px solid red;
+    margin: 0%;
 }
 
 .about-title {
@@ -74,13 +80,17 @@
     justify-content: flex-start;
     align-items: center;
     width: 100%;
+    border: 1px solid red;
 }
 
 .about-title h2 {
-    font-size: 3em;
-    width: 100%;
-    text-align: left;
+    font-size: 4em;
+    border: 1px solid red;
     color: #1d1c28;
+    margin: 2%;
+    width: 100%;
+    max-width: 99%;
+    text-align: left;
     font-family: 'Cabin', sans-serif;
 }
 
@@ -90,16 +100,20 @@
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    max-width: 99%;
-    margin: 1% 0;
+    max-width: 98%;
+    border: 1px solid red;
 }
 
 .about-text p {
-    font-size: 1.25em;
-    line-height: 2;
+    font-size: 1.5em;
+    line-height: 2.5;
     font-family: 'Lato', sans-serif;
     color: #1d1c28;
-    margin: 0.5% 0;
+    margin: 2%;
+    width: 100%;
+    max-width: 98%;
+    text-align: left;
+    border: 1px solid red;
 }
 
 #services {
@@ -107,19 +121,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80vh;
-    width: 100%;
+    height: auto;
+    min-height: 120vh;
+    margin: 2% 0%;
+    border: 1px solid blue;
+    height: auto;
 }
 
 .services-content-row {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
-    max-width: 99%;
+    justify-content: center;
+    align-items: flex-start;
     flex-grow: 1;
-    height: 100%;
+    width: 100%;
+    max-width: 98%;
     border: 1px solid red;
 }
 
@@ -129,6 +145,10 @@
     justify-content: flex-start;
     align-items: center;
     margin: 1.5% 0.5%;
+    width: 100%;
+    max-width: 30%;
+    height: auto;
+    border: 1px solid green;
 }
 
 .services-title {
@@ -156,10 +176,27 @@
 
 .services-text p {
     font-size: 1.25em;
-    line-height: 2;
+    line-height: 2.5;
     font-family: 'Lato';
     color: #1d1c28;
     text-align: left;
+}
+
+.service-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: auto;
+
+}
+
+.service-img img {
+    height:  80%;
+    width: 80%;
+    flex-grow: 1;
+    margin: 0.5%;
 }
 
 #contact {
@@ -184,15 +221,21 @@
 .contact-title {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     width: 100%;
+    border: 1px solid red;
 }
 
 .contact-title h2 {
-    font-size: 3em;
+    font-size: 4em;
+    border: 1px solid red;
     color: #1d1c28;
-    font-family: 'Cabin';
+    margin: 2%;
+    width: 100%;
+    max-width: 99%;
+    text-align: left;
+    font-family: 'Cabin', sans-serif;
 }
 
 .contact-text {
@@ -201,16 +244,18 @@
     justify-content: flex-start;
     align-items: center;
     width: 100%;
-    max-width: 99%;
-    margin: 1% 0;
+    max-width: 98%;
 }
 
 .contact-text p {
-    font-size: 1.25em;
-    line-height: 2;
-    font-family: 'Lato';
+    font-size: 1.5em;
+    line-height: 2.5;
+    font-family: 'Lato', sans-serif;
     color: #1d1c28;
-    margin: 0.5%;
+    margin: 2%;
+    width: 100%;
+    max-width: 98%;
+    text-align: left;
 }
 
 header {
@@ -420,6 +465,12 @@ footer {
     .header-content {
         flex-direction: row;
     }
+
+    .about-content,
+    .contact-content {
+        max-width: 80%;
+    }
+
 }
 
 @media only screen and (min-width: 920px) {
